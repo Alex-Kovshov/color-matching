@@ -1,4 +1,4 @@
-cdconst item = document.querySelectorAll(".colors__item");
+const item = document.querySelectorAll(".colors__item");
 
 window.addEventListener('keydown', (event) => {
     event.preventDefault()
