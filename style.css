@@ -1,0 +1,52 @@
+body {
+    background-color: orangered;
+    font-family: "Fragment Mono";
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4,
+h5, h6 {
+    margin: 0;
+}
+
+.wrapper-colors {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    
+}
+
+.colors__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.colors__item-titl {
+    
+    cursor: pointer;
+    padding: 20px;
+}
+
+.colors__item button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    outline: none;
+    cursor: pointer;
+}
+
+.colors__item button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    font-size: 1.5em;
+}
