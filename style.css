@@ -50,3 +50,27 @@ h5, h6 {
     border-radius: 3px;
     font-size: 1.5em;
 }
+
+.alert {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 500px;
+    height: 100px;
+    border: 1px solid #000;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.alert p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100px;
+    font-size: 36px;
+    
+}

@@ -9,15 +9,22 @@ window.addEventListener('keydown', (event) => {
 })
 
 document.addEventListener('click', (event) => {
+    const alert = document.querySelector('.alert');
     const type = event.target.dataset.type
     if(type === "lock"){
         
         const node = event.target.tagName.toLowerCase()==='i' ? event.target : event.target.children[0]
         node.classList.toggle('fa-lock-open')
         node.classList.toggle('fa-lock')
+
+        
         
     } else if (type === 'copy') {
         copyToClickboard(event.target.textContent)
+        alert.style.display='block'
+        setTimeout(() => {
+          alert.style.display='none'
+        }, 2000);
       }
 })
 // копирует текст при клике по нему
@@ -89,7 +96,7 @@ function updateColorsHash(colors = []) {
 setRendomColors(true)
 
 
-
+/* 
 let tthAuto = [
   {marka: 'toyota', speed: 200, ears: 2016 },
   {marka: 'nissan', speed: 220, ears: 2018 },
@@ -101,4 +108,4 @@ const newCar = tthAuto.map(car=>{
   return `${car.speed}+(${car.marka})`
 })
 
-console.log(newCar)
+console.log(newCar) */
